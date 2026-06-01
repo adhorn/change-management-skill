@@ -1,0 +1,8 @@
+.DS_Store
+*~
+.idea/
+.vscode/
+
+# Local development mechanism — personal machine paths, not for the shared repo
+DEVELOPMENT.md
+sync.sh
