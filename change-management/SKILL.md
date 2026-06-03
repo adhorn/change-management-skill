@@ -102,7 +102,7 @@ Then work the change steps **one step at a time**. For each step:
 3. The operator runs it in their own terminal and **pastes the actual output back**. Ask for the real output, not "done."
 4. **Record** the observed output in the execution table. Don't ask the operator to log who ran it or when; the executor is named in the record header and the git commit timestamps it. At a hold point, do record who did the second-person verification, since that's a different person and new information not already in the record.
 5. **Compare** the output to the expected outcome. If it matches, move on. If it does **not** match, stop and put the choice to the operator: continue (with a recorded reason), pause, or roll back. Record the decision and the reason. Never skip ahead or batch steps.
-6. **Hold points:** after the operator's step, stop. A second person must confirm before the next step unlocks. Record who confirmed, in the Observed cell.
+6. **Hold points:** *before* the operator runs the step, stop. Present the command and the expected outcome to a second person; they read it and confirm the action should be taken. Only then does the operator run it. Record who confirmed, in the Observed cell. The forcing function is the pause and the shared attention *before* the action — verifying after the fact is procedurally weaker for the steps where hold points matter most (irreversible actions, cutovers, destructive operations).
 
 ### When it stops being a change and becomes an incident
 
